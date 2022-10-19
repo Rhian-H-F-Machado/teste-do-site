@@ -50,6 +50,44 @@ body{
     color: #fff;
 }
 
+.header-design-nav li{
+    text-align: center;
+}
+
+.design-nav-line {
+    margin-top: 2px;
+    width: 90px;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 25px;
+    transform-origin: center bottom;
+    transition: transform 500ms;
+
+}
+
+.header-design-nav li:nth-child(2) a {
+    color: #F5992D;
+
+}
+
+.header-design-nav li:nth-child(2) .design {
+    background: #F5992D;
+
+}
+
+na.header-design-navv li:hover {
+    transform: scale(1.1) translateY(10%);
+}
+
+.header-design-nav li:hover a {
+    color: #F5992D;
+}
+
+.header-design-nav li:hover .design-nav-line {
+    transform: scaleY(1.2);
+    background: #F5992D;
+}
+
 .header-design-button{
     width: 20%;
     height: 100%;
