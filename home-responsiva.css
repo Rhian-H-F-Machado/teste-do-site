@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(29, 91, 141), rgb(0, 127, 231), rgb(29, 91, 141));
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .menu-icon{
+    cursor: pointer;
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+nav ul li{
+    padding: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+
+nav ul button{
+    border: none;
+    border-radius: 35px;
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    column-gap: 25px;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -23px
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: all;
+    transition-duration: .25s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon-insta:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.icon-face:hover {
+    background-image: radial-gradient(circle at 30% 107%, #97e2fd 0%, #97affd 5%, #495bfd 45%, #2436d6 60%, #28ceeb 90%);
+    outline-color: #28baeb;
+}
+
+.icon-zap:hover {
+    background-image: radial-gradient(circle at 30% 107%, #97fda5 0%, #97fda8 5%, #49fda6 45%, #24d653 60%, #28eb79 90%);
+    outline-color: green;
+}
+
+.text{
+    width: 40%;
+    margin-left: 10px;
+}
+.text h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.text b{
+    color: #F2972D;
+}
+
+.b2 {
+    width: 50%;
+    height: 55px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #F5992D;
+    border-radius: 999px;
+    box-shadow: #F5992D 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.b2:hover{
+    background-color: #c97c25;
+}
+
+.x-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.x-img img {
+    width: 100%;
+}
+
+@media (max-width: 970px) {
+    nav .menu-icon{
+        display: block;
+        align-items: center;
+    }
+
+
+
+    nav ul{
+        position: fixed;
+        width: 60px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+        background-color: rgb(19, 19, 58);
+    }
+
+    nav ul.active{
+        transform: translateX(0);
+    }
+    nav ul li{
+        padding: 10px;
+    }
+
+    nav ul a{
+        font-size: 18px;
+    }
+
+    nav ul button{
+        font-size: 6px;
+        margin: 10px;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    .text{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .b2{
+        margin-top: 20px;
+    }
+
+    
+}
